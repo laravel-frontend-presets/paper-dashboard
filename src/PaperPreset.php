@@ -16,18 +16,16 @@ class PaperPreset extends Preset
      */
     public static function install()
     {
-        static::addUserManagement();
-
         static::updatePackages();
         static::updateAssets();
         
         static::updateWelcomePage();
         static::updateAuthViews();
         static::updateLayoutViews();
+
+        static::addUserManagement();
+        static::addPagesSection();
         static::updateDashboardPage();
-        static::updateAuthControllers();
-        
-        
         
         // static::removeNodeModules();
     }
@@ -82,17 +80,6 @@ class PaperPreset extends Preset
     }
 
     /**
-     * Update the auth controllers
-     *
-     * @return void
-     */
-    protected static function updateAuthControllers()
-    {
-        // copy new one from your stubs folder
-        static::copyDirectory('app/Http/Controllers/Auth', app_path('Http/Controllers/Auth'));
-    }
-
-    /**
      * Update the default layout files
      *
      * @return void
@@ -112,6 +99,7 @@ class PaperPreset extends Preset
     {
         // Add Home controller
         static::copyFile('app/Http/Controllers/HomeController.php', app_path('Http/Controllers/HomeController.php'));
+        static::copyFile('app/Http/Controllers/Auth/RegisterController.php', app_path('Http/Controllers/Auth/RegisterController.php'));
 
         // Add Auth routes in 'routes/web.php'
         file_put_contents(
@@ -137,21 +125,19 @@ class PaperPreset extends Preset
                
         static::copyFile('app/Http/Controllers/UserController.php', app_path('Http/Controllers/UserController.php'));
         static::copyFile('app/Http/Controllers/ProfileController.php', app_path('Http/Controllers/ProfileController.php'));
-        static::copyFile('app/Http/Controllers/PageController.php', app_path('Http/Controllers/PageController.php'));
         static::copyDirectory('app/Http/Requests', app_path('Http/Requests'));
         static::copyDirectory('app/Rules', app_path('Rules'));
 
         // Add routes
         file_put_contents(
             './routes/web.php', 
-            "Route::group(['middleware' => 'auth'], function () {\n\tRoute::resource('user', 'UserController', ['except' => ['show']]);\n\tRoute::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);\n\tRoute::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);\n\tRoute::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);\n\tRoute::get('{page}', ['as' => 'page.index', 'uses' => 'PageController@index']);\n});\n\n", 
+            "Route::group(['middleware' => 'auth'], function () {\n\tRoute::resource('user', 'UserController', ['except' => ['show']]);\n\tRoute::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);\n\tRoute::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);\n\tRoute::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);\n});\n\n", 
             FILE_APPEND
         );
 
         // Copy views
         static::copyDirectory('resources/views/users', resource_path('views/users'));
         static::copyDirectory('resources/views/profile', resource_path('views/profile'));
-        static::copyDirectory('resources/views/pages', resource_path('views/pages'));
     }
 
     /**
@@ -187,5 +173,28 @@ class PaperPreset extends Preset
     private static function copyDirectory($directory, $destination)
     {
         (new Filesystem)->copyDirectory(static::STUBSPATH.$directory, $destination);
+    }
+
+
+
+    /**
+     * Copy page controller, routes and files
+     *
+     * @return void
+     */
+    public static function addPagesSection()
+    {
+               
+        static::copyFile('app/Http/Controllers/PageController.php', app_path('Http/Controllers/PageController.php'));
+
+        // Add routes
+        file_put_contents(
+            './routes/web.php', 
+            "Route::group(['middleware' => 'auth'], function () {\n\tRoute::get('{page}', ['as' => 'page.index', 'uses' => 'PageController@index']);\n});\n\n", 
+            FILE_APPEND
+        );
+
+        // Copy views
+        static::copyDirectory('resources/views/pages', resource_path('views/pages'));
     }
 }
