@@ -3,8 +3,9 @@
  Paper Dashboard 2 - v2.0.0
 =========================================================
 
- Product Page: https://www.creative-tim.com/product/paper-dashboard-2
+ Product Page: https://www.creative-tim.com/product/paper-dashboard
  Copyright 2019 Creative Tim (https://www.creative-tim.com)
+ UPDIVISION (https://updivision.com)
  Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard/blob/master/LICENSE)
 
  Coded by Creative Tim
