@@ -163,11 +163,11 @@ public function store(UserRequest $request, User $model)
 
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [![Register](/screens/Register.png)](https://paper-dashboard-laravel.creative-tim.com/register?ref=mdl-readme)  | [![Login](/screens/Login.png)](https://paper-dashboard-laravel.creative-tim.com/login?ref=mdl-readme)  | [![Dashboard](/screens/Dashboard.png)](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
+| [![Login](/screens/Login.png)](https://paper-dashboard-laravel.creative-tim.com/login?ref=mdl-readme)  | [![Dashboard](/screens/Dashboard.png)](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
 
 | Profile Page | Users Page | Tables Page  |
 | --- | --- | ---  |
-| [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=mdlp-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=mdl-readme) | [![Tables Page](screens/Tables.png)](https://paper-dashboard-laravel.creative-tim.com/table-list?ref=mdl-readme)
+| [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=mdlp-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=mdl-readme)
 [View More](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
 
 ## Documentation
