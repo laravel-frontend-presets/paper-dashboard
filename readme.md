@@ -152,26 +152,26 @@ public function store(UserRequest $request, User $model)
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html?ref=mdl-readme)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=mdl-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html?ref=pdl-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=pdl-readme)
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard 2 HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=mdl-readme) | [![Paper Dashboard 2 Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
+| [![Paper Dashboard 2 HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard 2 Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Demo
 
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [![Register](/screens/Register.png)](https://paper-dashboard-laravel.creative-tim.com/login?ref=mdl-readme) | [![Login](/screens/Login.png)](https://paper-dashboard-laravel.creative-tim.com/login?ref=mdl-readme)  | [![Dashboard](/screens/Dashboard.png)](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
+| [![Register](/screens/Register.png)](https://paper-dashboard-laravel.creative-tim.com/login?ref=pdl-readme) | [![Login](/screens/Login.png)](https://paper-dashboard-laravel.creative-tim.com/login?ref=pdl-readme)  | [![Dashboard](/screens/Dashboard.png)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 | Profile Page | Users Page | Notifications Page  |
 | --- | --- | ---  |
-| [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=mdlp-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=mdl-readme) | [![Notifications Page](screens/Notifications.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=mdl-readme)
-[View More](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
+| [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=pdl-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme) | [![Notifications Page](screens/Notifications.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme)
+[View More](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Documentation
-The documentation for the Paper Dashboard 2 Laravel is hosted at our [website](https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=mdl-readme).
+The documentation for the Paper Dashboard 2 Laravel is hosted at our [website](https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme).
 
 ## File Structure
 ```
@@ -332,9 +332,9 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://paper-dashboard-laravel.creative-tim.com/?ref=mdlp-readme>
-- Download Page: <https://www.creative-tim.com/product/paper-dashboard-laravel?ref=mdl-readme>
-- Documentation: <https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=mdl-readme>
+- Demo: <https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme>
+- Download Page: <https://www.creative-tim.com/product/paper-dashboard-laravel?ref=pdl-readme>
+- Documentation: <https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/laravel-frontend-presets/paper-dashboard/issues)
@@ -342,7 +342,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard 2 HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=mdl-readme) | [![Paper Dashboard 2 Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
+| [![Paper Dashboard 2 HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard 2 Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Change log
 
@@ -350,20 +350,20 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/?ref=mdl-readme)
+- [Creative Tim](https://creative-tim.com/?ref=pdl-readme)
 - [UPDIVISION](https://updivision.com)
 
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Paper Dashboard 2 Laravel. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Paper Dashboard 2 Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=mdl-readme).
+1. Make sure that you are using the latest version of the Paper Dashboard 2 Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=pdl-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Licensing
 
-- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=mdl-readme)
+- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=pdl-readme)
 - [Creative Tim License](https://www.creative-tim.com/license).
 
 
@@ -373,36 +373,36 @@ We use GitHub Issues as the official bug tracker for the Paper Dashboard 2 Larav
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 - [Blog Creative Tim](http://blog.creative-tim.com/)
 - [Free Products](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=mdl-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=mdl-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=mdl-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=mdl-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=mdl-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles??ref=mdl-readme)
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=pdl-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=pdl-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=pdl-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=pdl-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=pdl-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles??ref=pdl-readme)
 
 ### Social Media
 
 ### Creative Tim:
 
-Twitter: <https://twitter.com/CreativeTim?ref=mdl-readme>
+Twitter: <https://twitter.com/CreativeTim?ref=pdl-readme>
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=mdl-readme>
+Facebook: <https://www.facebook.com/CreativeTim?ref=pdl-readme>
 
-Dribbble: <https://dribbble.com/creativetim?ref=mdl-readme>
+Dribbble: <https://dribbble.com/creativetim?ref=pdl-readme>
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=mdl-readme>
+Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=pdl-readme>
 
 ### Updivision:
 
-Twitter: <https://twitter.com/updivision?ref=mdl-readme>
+Twitter: <https://twitter.com/updivision?ref=pdl-readme>
 
-Facebook: <https://www.facebook.com/updivision?ref=mdl-readme>
+Facebook: <https://www.facebook.com/updivision?ref=pdl-readme>
 
-Linkedin: <https://www.linkedin.com/company/updivision?ref=mdl-readme>
+Linkedin: <https://www.linkedin.com/company/updivision?ref=pdl-readme>
 
-Updivision Blog: <https://updivision.com/blog/?ref=mdl-readme>
+Updivision Blog: <https://updivision.com/blog/?ref=pdl-readme>
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/?ref=mdl-readme)
+- [Creative Tim](https://creative-tim.com/?ref=pdl-readme)
 - [UPDIVISION](https://updivision.com)
