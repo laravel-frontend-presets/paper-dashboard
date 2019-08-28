@@ -7,7 +7,7 @@
 //  UPDIVISION (https://updivision.com)
 //  Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard/blob/master/LICENSE)
 //
-//  Coded by Creative Tim
+//  Coded by Creative Tim & UPDIVISION
 //
 // =========================================================
 //
