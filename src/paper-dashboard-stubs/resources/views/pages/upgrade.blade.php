@@ -70,7 +70,7 @@
                                         </td>
                                         <td class="text-center">
                                             <a target="_blank"
-                                                href="https://www.creative-tim.com/product/paper-dashboard-2-pro?ref=pd-free-upgrade-live"
+                                                href="https://www.creative-tim.com/product/paper-dashboard-pro?ref=pd-free-upgrade-live"
                                                 class="btn btn-round btn-primary">Upgrade to PRO</a>
                                         </td>
                                     </tr>

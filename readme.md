@@ -1,10 +1,10 @@
-# [Paper Dashboard 2 Laravel - Free Frontend Preset for Laravel](https://paper-dashboard-laravel.creative-tim.com/?ref=adnp-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Paper%20Dashboard%20Laravel%20is%20a%20Free%20Frontend%20Preset%20for%20Laravel%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//paper-dashboard-laravel.creative-tim.com/%20%23%paper%20%23design%20%23dashboard%20%23laravel%20%23free%20via%20%40CreativeTim)
+# [Paper Dashboard Laravel - Free Frontend Preset for Laravel](https://paper-dashboard-laravel.creative-tim.com/?ref=adnp-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Paper%20Dashboard%20Laravel%20is%20a%20Free%20Frontend%20Preset%20for%20Laravel%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//paper-dashboard-laravel.creative-tim.com/%20%23%paper%20%23design%20%23dashboard%20%23laravel%20%23free%20via%20%40CreativeTim)
 
 <a href="https://packagist.org/packages/laravel-frontend-presets/paper-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/paper-dashboard/v/stable.svg" alt="Latest Stable Version"></a> ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/laravel-frontend-presets/paper-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/paper-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/laravel-frontend-presets/paper-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/paper-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
-*Frontend version*: Paper Dashboard 2 v2.1.1. More info at https://www.creative-tim.com/product/paper-dashboard
+*Frontend version*: Paper Dashboard v2.1.1. More info at https://www.creative-tim.com/product/paper-dashboard
 
-![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)
+![Product Image](https://github.com/creativetimofficial/public-assets/raw/master/paper-dashboard-2-laravel/intro.gif?raw=true)
 
 Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and up.
 
@@ -40,12 +40,12 @@ After initializing a fresh instance of Laravel (and making all the necessary con
 
 1. In your application's root create a **presets** folder
 2. [Download an archive](https://github.com/laravel-frontend-presets/paper-dashboard/archive/master.zip) of the repo and unzip it
-3. Copy and paste **paper-dashboard-2-master** folder in presets (created in step 2) and rename it to **paper**
+3. Copy and paste **paper-dashboard-master** folder in presets (created in step 2) and rename it to **paper**
 4. Open `composer.json` file 
 5. Add `"LaravelFrontendPresets\\PaperPreset\\": "presets/paper/src"` to `autoload/psr-4` and to `autoload-dev/psr-4`
-6. Add `LaravelFrontendPresets\PaperPreset\PaperPresetServiceProvider::class` to `config/app.php` file
+6. Add `LaravelFrontendPresets\PaperPreset\PaperPresetServiceProvider::class,` to `config/app.php` file
 7. In your terminal run `composer dump-autoload`
-8. Run `php artisan preset paper` command to install the Paper Dashboard 2 preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
+8. Run `php artisan preset paper` command to install the Paper Dashboard preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
 (NOTE: If you run this command several times, be sure to clean up the duplicate Auth entries in routes/web.php)
 9. Run `php artisan migrate --seed` to create basic users table
 
@@ -157,7 +157,7 @@ public function store(UserRequest $request, User $model)
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard 2 HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard 2 Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Demo
 
@@ -171,7 +171,7 @@ public function store(UserRequest $request, User $model)
 [View More](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Documentation
-The documentation for the Paper Dashboard 2 Laravel is hosted at our [website](https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme).
+The documentation for the Paper Dashboard Laravel is hosted at our [website](https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme).
 
 ## File Structure
 ```
@@ -342,7 +342,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard 2 HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard 2 Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Change log
 
@@ -355,9 +355,9 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Paper Dashboard 2 Laravel. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Paper Dashboard Laravel. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Paper Dashboard 2 Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=pdl-readme).
+1. Make sure that you are using the latest version of the Paper Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=pdl-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 

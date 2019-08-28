@@ -7,7 +7,7 @@ use Illuminate\Foundation\Console\Presets\Preset;
 
 class PaperPreset extends Preset
 {
-    const STUBSPATH = __DIR__.'/paper-dashboard-2-stubs/';
+    const STUBSPATH = __DIR__.'/paper-dashboard-stubs/';
 
     /**
      * Install the preset.

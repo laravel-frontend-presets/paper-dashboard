@@ -2,7 +2,7 @@
     "name": "laravel-frontend-presets/paper",
     "description": "Laravel 5.x Front-end preset for paper dashboard",
     "license": "MIT",
-    "homepage": "https://github.com/creativetimofficial/paper-dashboard-2-laravel",
+    "homepage": "https://github.com/creativetimofficial/paper-dashboard-laravel",
     "keywords": ["Laravel", "Preset", "Paper"],
     "require": {
         "laravel/framework": "^5.5"
