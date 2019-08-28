@@ -2,7 +2,7 @@
 
 <a href="https://packagist.org/packages/laravel-frontend-presets/paper-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/paper-dashboard/v/stable.svg" alt="Latest Stable Version"></a> ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/laravel-frontend-presets/paper-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/paper-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/laravel-frontend-presets/paper-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/paper-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
-*Frontend version*: Paper Dashboard v2.1.1. More info at https://www.creative-tim.com/product/paper-dashboard
+*Frontend version*: Paper Dashboard v2.1.1. More info at https://www.creative-tim.com/product/paper-dashboard/?ref=pdl-readme
 
 ![Product Image](https://github.com/creativetimofficial/public-assets/raw/master/paper-dashboard-2-laravel/intro.gif?raw=true)
 
