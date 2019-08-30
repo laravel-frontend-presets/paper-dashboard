@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="col-md-8 text-center">
-                <form class="form-horizontal col-md-6 mx-auto" action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
+                <form class="col-md-12" action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="card">
@@ -182,7 +182,7 @@
                         </div>
                     </div>
                 </form>
-                <form class="form-horizontal col-md-6 mx-auto" action="{{ route('profile.password') }}" method="POST">
+                <form class="col-md-12" action="{{ route('profile.password') }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="card">

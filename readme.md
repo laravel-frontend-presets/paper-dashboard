@@ -1,4 +1,4 @@
-# [Paper Dashboard Laravel - Free Frontend Preset for Laravel](https://paper-dashboard-laravel.creative-tim.com/?ref=adnp-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Paper%20Dashboard%20Laravel%20is%20a%20Free%20Frontend%20Preset%20for%20Laravel%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//paper-dashboard-laravel.creative-tim.com/%20%23%paper%20%23design%20%23dashboard%20%23laravel%20%23free%20via%20%40CreativeTim)
+# [Paper Dashboard Laravel - Free Frontend Preset for Laravel](https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=adnp-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Paper%20Dashboard%20Laravel%20is%20a%20Free%20Frontend%20Preset%20for%20Laravel%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//paper-dashboard-laravel.creative-tim.com/%20%23%paper%20%23design%20%23dashboard%20%23laravel%20%23free%20via%20%40CreativeTim)
 
 <a href="https://packagist.org/packages/laravel-frontend-presets/paper-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/paper-dashboard/v/stable.svg" alt="Latest Stable Version"></a> ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/laravel-frontend-presets/paper-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/paper-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/laravel-frontend-presets/paper-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/paper-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
@@ -157,7 +157,7 @@ public function store(UserRequest $request, User $model)
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg?1527074871)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/209/original/opt_pd_laravel_thumbnail.jpg)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Demo
 
@@ -168,10 +168,10 @@ public function store(UserRequest $request, User $model)
 | Profile Page | Users Page | Notifications Page  |
 | --- | --- | ---  |
 | [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=pdl-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme) | [![Notifications Page](screens/Notifications.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme)
-[View More](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+[View More](https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=pdl-readme)
 
 ## Documentation
-The documentation for the Paper Dashboard Laravel is hosted at our [website](https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme).
+The documentation for the Paper Dashboard Laravel is hosted at our [website](https://www.creative-tim.com/live/paper-dashboard-laravel/?start-page=/docs/getting-started/laravel-setup.html&ref=pdl-readme).
 
 ## File Structure
 ```
@@ -332,9 +332,9 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme>
+- Demo: <https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=pdl-readme>
 - Download Page: <https://www.creative-tim.com/product/paper-dashboard-laravel?ref=pdl-readme>
-- Documentation: <https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme>
+- Documentation: <https://www.creative-tim.com/live/paper-dashboard-laravel/?start-page=/docs/getting-started/laravel-setup.html&ref=pdl-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/laravel-frontend-presets/paper-dashboard/issues)
@@ -342,7 +342,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Change log
 

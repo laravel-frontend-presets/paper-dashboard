@@ -8,7 +8,7 @@
  * Copyright 2018 Creative Tim (http://www.creative-tim.com)
  * UPDIVISION (https://updivision.com/)
 
- * Designed by www.invisionapp.com Coded by www.creative-tim.com & www.updivision.com
+ * Designed by www.invisionapp.com Coded by www.creative-tim.com
 
  =========================================================
 
@@ -2617,6 +2617,35 @@ body {
   -ms-transition: all 300ms ease 0s;
   transition: all 300ms ease 0s;
 }
+
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon {
+    text-transform: uppercase;
+    width: 34px;
+    margin-right: 10px;
+    margin-left: 0px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    float: left;
+    z-index: 1;
+    display: inherit;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .off-canvas-sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal, .off-canvas-sidebar .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal {
+    margin: 0;
+    position: relative;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+    white-space: nowrap;
+    display: block;
+    line-height: 20px;
+    z-index: 1;
+}
+
+
 
 .dropdown-toggle:after,
 .bootstrap-switch-label:before,
