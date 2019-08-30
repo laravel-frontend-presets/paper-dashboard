@@ -171,7 +171,7 @@ public function store(UserRequest $request, User $model)
 [View More](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
 
 ## Documentation
-The documentation for the Paper Dashboard Laravel is hosted at our [website](https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme).
+The documentation for the Paper Dashboard Laravel is hosted at our [website](https://www.creative-tim.com/live/paper-dashboard-laravel/?start-page=/docs/getting-started/laravel-setup.html/?ref=pdl-readme).
 
 ## File Structure
 ```
@@ -332,9 +332,9 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme>
+- Demo: <https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=pdl-readme>
 - Download Page: <https://www.creative-tim.com/product/paper-dashboard-laravel?ref=pdl-readme>
-- Documentation: <https://paper-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=pdl-readme>
+- Documentation: <https://www.creative-tim.com/live/paper-dashboard-laravel/?start-page=/docs/getting-started/laravel-setup.html/?ref=pdl-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/laravel-frontend-presets/paper-dashboard/issues)
