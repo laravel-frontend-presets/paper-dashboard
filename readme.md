@@ -157,7 +157,7 @@ public function store(UserRequest $request, User $model)
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg?1527074871)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/209/original/opt_pd_laravel_thumbnail.jpg)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg?1527074871)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg)](https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=pdl-readme)
 
 ## Demo
 
@@ -167,7 +167,7 @@ public function store(UserRequest $request, User $model)
 
 | Profile Page | Users Page | Notifications Page  |
 | --- | --- | ---  |
-| [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=pdl-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme) | [![Notifications Page](screens/Notifications.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme)
+| [![Profile Page](screens/Profile.png)](https://paper-dashboard-laravel.creative-tim.com/profile?ref=pdl-readme)  | [![Users Page](screens/Users.png)](https://paper-dashboard-laravel.creative-tim.com/user?ref=pdl-readme) | [![Notifications Page](screens/Notifications.png)](https://paper-dashboard-laravel.creative-tim.com/notifications?ref=pdl-readme)
 [View More](https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=pdl-readme)
 
 ## Documentation
@@ -342,7 +342,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://paper-dashboard-laravel.creative-tim.com/?ref=pdl-readme)
+| [![Paper Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg)](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html?ref=pdl-readme) | [![Paper Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://www.creative-tim.com/live/paper-dashboard-laravel/?ref=pdl-readme)
 
 ## Change log
 
