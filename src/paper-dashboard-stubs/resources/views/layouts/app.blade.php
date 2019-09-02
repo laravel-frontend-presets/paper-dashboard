@@ -92,13 +92,12 @@ The above copyright notice and this permission notice shall be included in all c
     
     @auth()
         @include('layouts.page_templates.auth')
+        @include('layouts.navbars.fixed-plugin')
     @endauth
     
     @guest
         @include('layouts.page_templates.guest')
     @endguest
-    
-    @include('layouts.navbars.fixed-plugin')
 
     <!--   Core JS Files   -->
     <script src="{{ asset('paper') }}/js/core/jquery.min.js"></script>
