@@ -267,8 +267,6 @@ The documentation for the Paper Dashboard Laravel is hosted at our [website](htt
         ├── profile
         │   └── edit.blade.php
         ├── users
-        │   ├── create.blade.php
-        │   ├── edit.blade.php
         │   └── index.blade.php
         └── welcome.blade.php
 ```
