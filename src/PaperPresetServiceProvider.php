@@ -4,6 +4,8 @@ namespace LaravelFrontendPresets\PaperPreset;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;
+use Laravel\Ui\UiCommand; 
+use Laravel\Ui\AuthCommand;
 
 class PaperPresetServiceProvider extends ServiceProvider
 {
@@ -14,7 +16,7 @@ class PaperPresetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('paper', function ($command) {
+        UiCommand::macro('paper', function ($command) {
             PaperPreset::install();
             
             $command->info('Paper dashboard scaffolding installed successfully.');

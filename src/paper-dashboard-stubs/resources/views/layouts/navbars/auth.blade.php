@@ -72,10 +72,10 @@
                     <p>{{ __('Typography') }}</p>
                 </a>
             </li>
-            <li class="active-pro {{ $elementActive == 'upgrade' ? 'active' : '' }}">
+            <li class="active-pro {{ $elementActive == 'upgrade' ? 'active' : '' }} bg-danger">
                 <a href="{{ route('page.index', 'upgrade') }}">
-                    <i class="nc-icon nc-spaceship"></i>
-                    <p>{{ __('Upgrade to PRO') }}</p>
+                    <i class="nc-icon nc-spaceship text-white"></i>
+                    <p class="text-white">{{ __('Upgrade to PRO') }}</p>
                 </a>
             </li>
         </ul>
