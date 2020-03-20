@@ -14,6 +14,10 @@ All notable changes to `Paper Dashboard` frontend preset for Laravel will be doc
 
 - Update to Laravel 6.x
 
-## Version 1.0.2 - 2020-03-18
+## Version 1.0.2 - 2019-11-14
+
+- Update Composer
+
+## Version 1.0.3 - 2020-03-18
 
 - Update to Laravel 7.x
