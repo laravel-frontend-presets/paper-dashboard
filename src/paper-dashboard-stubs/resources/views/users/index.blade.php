@@ -198,10 +198,10 @@ The above copyright notice and this permission notice shall be included in all c
                                     <p>{{ __('Typography') }}</p>
                                 </a>
                             </li>
-                            <li >
-                                <a href="{{ route('page.index', 'upgrade') }}">
-                                    <i class="nc-icon nc-spaceship"></i>
-                                    <p>{{ __('Upgrade to PRO') }}</p>
+                            <li class="active-pro {{ $elementActive == 'upgrade' ? 'active' : '' }}">
+                                <a href="{{ route('page.index', 'upgrade') }}" class="bg-danger">
+                                    <i class="nc-icon nc-spaceship text-white"></i>
+                                    <p class="text-white">{{ __('Upgrade to PRO') }}</p>
                                 </a>
                             </li>
                         </ul>
