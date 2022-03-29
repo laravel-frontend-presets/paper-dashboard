@@ -4,7 +4,7 @@
 
 *Frontend version*: Paper Dashboard v2.1.1. More info at https://www.creative-tim.com/product/paper-dashboard-2/?ref=pdl-readme
 
-![Product Image](https://github.com/creativetimofficial/public-assets/raw/master/paper-dashboard-2-laravel/intro.gif?raw=true)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/products/209/original/opt_pd_laravel_thumbnail.jpg" width="100%" />](https://www.creative-tim.com/live/paper-dashboard-laravel) 
 
 Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 9.x and up.
 
