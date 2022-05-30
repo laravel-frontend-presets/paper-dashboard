@@ -26,11 +26,11 @@ jobs:
         id: fetch-merge
         run: |
           git fetch upstream
-          git checkout main
-          lines=$( git diff main..upstream/main -- . ':(exclude).github/**' | wc -l )
+          git checkout master
+          lines=$( git diff master..upstream/master -- . ':(exclude).github/**' | wc -l )
           echo "Number of detected line changes: $lines"
           if [ $lines -gt 0 ]; then
-            git merge upstream/main
+            git merge upstream/master
             git push
           fi
         shell: bash
