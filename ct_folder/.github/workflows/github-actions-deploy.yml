@@ -27,9 +27,8 @@ jobs:
           path: preset_folder
       - run: rsync -av --progress /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/ct_folder /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder --exclude .git
       - name: Configure git
+        working-directory: /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
         run: |
-          pwd
-          cd /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
           pwd
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
