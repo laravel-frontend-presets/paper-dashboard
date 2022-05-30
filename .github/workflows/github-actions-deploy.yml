@@ -22,7 +22,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.TOKEN_CT }}
         with:
-          source-directory: '/home/runner/work/paper-dashboard/paper-dashboard'
+          source-directory: '.'
           destination-github-username: 'creativetimofficial'
           destination-repository-name: 'paper-dashboard-laravel'
           user-email: team@updivision.com
