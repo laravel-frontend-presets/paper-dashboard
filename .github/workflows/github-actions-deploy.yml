@@ -11,34 +11,28 @@ jobs:
         run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event. "
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Checkout ct
-        uses: actions/checkout@v3
-        with:
-          repository: creativetimofficial/paper-dashboard-laravel
-          token: ${{ secrets.CT_TOKEN }}
-          path: ct_folder
       - name: Checkout preset
         uses: actions/checkout@v3
         with:
           repository: laravel-frontend-presets/paper-dashboard
           token: ${{ secrets.CT_TOKEN }}
-          path: preset_folder
+        run: |
+          git config --global user.name "CI Bot"
+          git config --global user.email "team@mupdivision.com"
+          git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/creativetimofficial/paper-dashboard-laravel
+          git fetch upstream
+          git merge upstream/master
+          git push origin HEAD:master --force
+    - name: Checkout Fork
+        uses: actions/checkout@v3
+        with:
+          repository: creativetimofficial/paper-dashboard-laravel
+          token: ${{ secrets.CT_TOKEN }}
         run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
           git fetch upstream
-          git checkout upstream/master
-          git merge origin/master
-          git push upstream HEAD:master --force
-      - name: Configure git and push to preset
-        working-directory: /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
-        run: |
-          rsync -r --exclude '.git' /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/ct_folder/* /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
-          git config --global user.name "CI Bot"
-          git config --global user.email "team@mupdivision.com"
-          git add .
-          git commit -m "merge with fork"
+          git merge upstream/master
           git push origin HEAD:master --force
-        shell: bash
       - run: echo "The fork was updated"   
