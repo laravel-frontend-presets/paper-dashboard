@@ -27,4 +27,4 @@ jobs:
           destination-repository-name: 'paper-dashboard-laravel'
           user-email: team@updivision.com
           target-branch: master
-      - run: echo "The fork was updated"   
+      - run: echo "The fork was updated!"   
