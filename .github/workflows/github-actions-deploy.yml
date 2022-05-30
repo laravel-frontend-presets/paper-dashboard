@@ -1,0 +1,24 @@
+name: GitHub Actions Demo
+on: 
+  push:
+    branches:
+      - master
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stats
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Update code on fork repository
+      - uses: cpina/github-action-push-to-another-repository@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.TOKEN_CT }}
+        with:
+          source-directory: '.'
+          destination-github-username: 'creativetimofficial'
+          destination-repository-name: 'paper-dashboard-laravel'
+          user-email: team@updivision.com
+          target-branch: master
+      - run: echo "The fork was updated"   
