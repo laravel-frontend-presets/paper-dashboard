@@ -8,24 +8,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stats
-        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event. "
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - name: List files in the repository
+      - run: mkdir ct_folder
+      - run: cd ct_folder
+      - name: Checkout ct
+        uses: actions/checkout@v1
+        with:
+          repository: creativetimofficial/paper-dashboard-laravel
+          token: ${{ secrets.CT_TOKEN }}
+      - run: cd ..
+      - run: mkdir preset_folder
+      - run: cd preset_folder
+      - name: Checkout preset
+        uses: actions/checkout@v1
+        with:
+          repository: laravel-frontend-presets/paper-dashboard
+          token: ${{ secrets.CT_TOKEN }}
+      - run: cd ..
+      
+      
+      
+      - name: Configure git
         run: |
-          ls ${{ github.workspace }}
-      - name: Create a Push
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_CT }}
-      - name: Update code on fork repository
-        run: git remote add upstream https://github.com/teamupdivision/creativetimofficial/paper-dashboard-laravel.git
-      - run: git fetch upstream
-      - run: git checkout upstream/master
-      - run: git merge origin/master
-      - run: git push upstream/master
-      - run: echo "The fork was updated!"   
+          git config --global user.name "CI Bot"
+          git config --global user.email "team@mupdivision.com"
+          git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
+        shell: bash
+      - name: Fetch and merge
+        id: fetch-merge
+        run: |
+          git fetch upstream
+          git checkout upstream/master
+          git merge origin/master
+          git push upstream HEAD:master --force
+        shell: bash
+      - run: echo "The fork was updated"   
