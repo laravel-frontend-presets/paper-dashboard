@@ -30,4 +30,4 @@ jobs:
           git merge origin/master
           git push upstream/master
         shell: bash
-      - run: echo "The fork was updated!"   
+      - run: echo "The fork was updated"   
