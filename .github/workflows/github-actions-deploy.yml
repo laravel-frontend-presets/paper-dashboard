@@ -11,11 +11,25 @@ jobs:
         run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event. "
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Checkout
+      - run: mkdir ct_folder
+      - run: cd ct_folder
+      - name: Checkout ct
         uses: actions/checkout@v1
         with:
           repository: creativetimofficial/paper-dashboard-laravel
           token: ${{ secrets.CT_TOKEN }}
+      - run: cd ..
+      - run: mkdir preset_folder
+      - run: cd preset_folder
+      - name: Checkout preset
+        uses: actions/checkout@v1
+        with:
+          repository: laravel-frontend-presets/paper-dashboard
+          token: ${{ secrets.CT_TOKEN }}
+      - run: cd ..
+      - run: rsync -av --progress ct_folder /preset_folder --exclude .git
+      
+      
       - name: Configure git
         run: |
           git config --global user.name "CI Bot"
