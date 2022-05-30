@@ -26,7 +26,7 @@ jobs:
           token: ${{ secrets.CT_TOKEN }}
           path: preset_folder
       - run: rsync -av --progress /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/ct_folder /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder --exclude .git
-      - run: pwd
+      - run: cd ..
       - run: cd /preset_folder
       - run: ls -la
       - run: pwd
