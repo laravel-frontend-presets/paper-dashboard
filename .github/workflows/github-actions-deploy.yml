@@ -20,7 +20,7 @@ jobs:
         run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
-          git remote add upstream https://github.com/creativetimofficial/paper-dashboard-laravel
+          git remote add upstream https://${{ secrets.TOKEN_CT }}@github.com/creativetimofficial/paper-dashboard-laravel
         shell: bash
       - name: Fetch and merge
         id: fetch-merge
@@ -28,6 +28,9 @@ jobs:
           git fetch upstream
           git checkout upstream/master
           git merge origin/master
-          git push upstream/master
+          rm -Rf .github/
+          git add .
+          git commit -m 'remove workflows'
+          git push upstream HEAD:master --force
         shell: bash
       - run: echo "The fork was updated"   
