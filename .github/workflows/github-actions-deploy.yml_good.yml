@@ -25,14 +25,6 @@ jobs:
           repository: laravel-frontend-presets/paper-dashboard
           token: ${{ secrets.CT_TOKEN }}
           path: preset_folder
-        run: |
-          git config --global user.name "CI Bot"
-          git config --global user.email "team@mupdivision.com"
-          git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
-          git fetch upstream
-          git checkout upstream/master
-          git merge origin/master
-          git push upstream HEAD:master --force
       - name: Configure git and push to preset
         working-directory: /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
         run: |
