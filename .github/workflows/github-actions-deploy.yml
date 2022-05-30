@@ -20,7 +20,7 @@ jobs:
         run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
-          git remote add upstream https://github.com/creativetimofficial/paper-dashboard-laravel
+          git remote add upstream https://${{ secrets.TOKEN_CT }}/github.com/teamupdivision/creativetimofficial/paper-dashboard-laravel
         shell: bash
       - name: Fetch and merge
         id: fetch-merge
