@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
         with:
-          repository: laravel-frontend-presets/paper-dashboard
+          repository: creativetimofficial/paper-dashboard-laravel
           token: ${{ secrets.CT_TOKEN }}
       - name: Configure git
         run: |
