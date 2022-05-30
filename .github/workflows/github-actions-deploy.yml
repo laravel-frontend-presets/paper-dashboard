@@ -26,12 +26,8 @@ jobs:
         id: fetch-merge
         run: |
           git fetch upstream
-          git checkout master
-          lines=$( git diff master..upstream/master -- . ':(exclude).github/**' | wc -l )
-          echo "Number of detected line changes: $lines"
-          if [ $lines -gt 0 ]; then
-            git merge upstream/master
-            git push
-          fi
+          git checkout upstream/master
+          git merge origin/master
+          git push upstream/master
         shell: bash
       - run: echo "The fork was updated!"   
