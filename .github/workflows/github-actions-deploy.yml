@@ -17,14 +17,15 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Update code on fork repository
-        run: git remote set-url origin https://github.com/teamupdivision/creativetimofficial/paper-dashboard-laravel.git
-      - run: git add .
-      - run: git commit -m ${{ github.event.head_commit.message }}
-      - name: Create a Push
+       - name: Create a Push
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_CT }}
-      - run: git push origin master
+      - name: Update code on fork repository
+        run: git remote add upstream https://github.com/teamupdivision/creativetimofficial/paper-dashboard-laravel.git
+      - run: git fetch upstream
+      - run: git checkout upstream/master
+      - run: git merge origin/master
+      - run: git push upstream/master
       - run: echo "The fork was updated!"   
