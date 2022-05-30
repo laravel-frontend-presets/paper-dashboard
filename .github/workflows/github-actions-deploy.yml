@@ -18,17 +18,13 @@ jobs:
         with:
           repository: creativetimofficial/paper-dashboard-laravel
           token: ${{ secrets.CT_TOKEN }}
-      - run: cd ..
-      - run: mkdir preset_folder
-      - run: cd preset_folder
       - name: Checkout preset
         uses: actions/checkout@v1
         with:
           repository: laravel-frontend-presets/paper-dashboard
           token: ${{ secrets.CT_TOKEN }}
-      - run: cd ..
-      - run: rsync -av --progress ct_folder /preset_folder --exclude .git
-      - run: cd preset_folder
+      - run: rsync -av --progress /home/runner/work/creativetimofficial/paper-dashboard-laravel /home/runner/work/paper-dashboard-laravel/paper-dashboard --exclude .git
+      - run: cd /home/runner/work/paper-dashboard-laravel/paper-dashboard
       - name: Configure git
         run: |
           git config --global user.name "CI Bot"
