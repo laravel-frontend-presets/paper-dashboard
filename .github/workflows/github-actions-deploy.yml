@@ -14,15 +14,17 @@ jobs:
       - run: mkdir ct_folder
       - run: cd ct_folder
       - name: Checkout ct
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
         with:
           repository: creativetimofficial/paper-dashboard-laravel
           token: ${{ secrets.CT_TOKEN }}
+          path: ct_folder
       - name: Checkout preset
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
         with:
           repository: laravel-frontend-presets/paper-dashboard
           token: ${{ secrets.CT_TOKEN }}
+          path: preset_folder
       - run: rsync -av --progress /home/runner/work/creativetimofficial/paper-dashboard-laravel /home/runner/work/paper-dashboard-laravel/paper-dashboard --exclude .git
       - run: cd /home/runner/work/paper-dashboard-laravel/paper-dashboard
       - name: Configure git
