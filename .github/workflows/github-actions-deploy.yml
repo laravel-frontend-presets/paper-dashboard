@@ -29,7 +29,8 @@ jobs:
       - name: Configure git
         run: |
           pwd
-          cd ../preset_folder
+          cd /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
+          pwd
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git add .
