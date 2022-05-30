@@ -28,6 +28,6 @@ jobs:
           git fetch upstream
           git checkout upstream/master
           git merge origin/master
-          git push upstream/master
+          git push upstream HEAD:master --force
         shell: bash
       - run: echo "The fork was updated"   
