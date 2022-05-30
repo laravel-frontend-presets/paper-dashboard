@@ -27,6 +27,7 @@ jobs:
           path: preset_folder
       - run: rsync -av --progress /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/ct_folder /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder --exclude .git
       - run: cd /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/ct_folder
+      - run: ls -la
       - name: Configure git
         run: |
           git config --global user.name "CI Bot"
