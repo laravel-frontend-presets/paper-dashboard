@@ -18,7 +18,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Update code on fork repository
-      - uses: cpina/github-action-push-to-another-repository@master
+        uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.TOKEN_CT }}
         with:
