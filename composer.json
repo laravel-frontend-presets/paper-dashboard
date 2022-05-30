@@ -1,0 +1,23 @@
+{
+    "name": "laravel-frontend-presets/paper",
+    "description": "Laravel 9.x Front-end preset for paper dashboard",
+    "license": "MIT",
+    "homepage": "https://github.com/creativetimofficial/paper-dashboard-laravel",
+    "keywords": ["Laravel", "Preset", "Paper"],
+    "require": {
+        "laravel/framework": "^9.0",
+        "laravel/legacy-factories": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelFrontendPresets\\PaperPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFrontendPresets\\PaperPreset\\PaperPresetServiceProvider"
+            ]
+        }
+    }
+}
