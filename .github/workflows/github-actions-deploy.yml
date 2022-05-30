@@ -18,11 +18,11 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Update code on fork repository
-        uses: cpina/github-action-push-to-another-repository@master
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.TOKEN_CT }}
         with:
-          source-directory: '.'
+          source-directory: ''
           destination-github-username: 'creativetimofficial'
           destination-repository-name: 'paper-dashboard-laravel'
           user-email: team@updivision.com
