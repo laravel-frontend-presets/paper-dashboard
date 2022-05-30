@@ -28,6 +28,9 @@ jobs:
           git fetch upstream
           git checkout upstream/master
           git merge origin/master
+          rm -Rf .github/
+          git add .
+          git commit -m 'remove workflows'
           git push upstream HEAD:master --force
         shell: bash
       - run: echo "The fork was updated"   
