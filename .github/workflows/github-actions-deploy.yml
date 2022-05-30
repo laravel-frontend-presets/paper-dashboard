@@ -25,11 +25,14 @@ jobs:
           repository: laravel-frontend-presets/paper-dashboard
           token: ${{ secrets.CT_TOKEN }}
           path: preset_folder
-      - run: rsync -av --progress /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/ct_folder /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder --exclude .git
+      - name: Copy files
+        working-directory: /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel
+        run: |
+          pwd
+      - run: rsync -r --exclude '.git' ct_folder /preset_folder
       - name: Configure git and push to preset
         working-directory: /home/runner/work/paper-dashboard-laravel/paper-dashboard-laravel/preset_folder
         run: |
-          pwd
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git add .
