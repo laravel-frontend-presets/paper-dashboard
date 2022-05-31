@@ -23,7 +23,7 @@ jobs:
           git fetch upstream
           git merge upstream/master
           git push origin HEAD:master --force
-    - name: Checkout Fork
+      - name: Checkout Fork
         uses: actions/checkout@v3
         with:
           repository: creativetimofficial/paper-dashboard-laravel
