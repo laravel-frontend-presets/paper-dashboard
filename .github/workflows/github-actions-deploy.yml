@@ -20,7 +20,7 @@ jobs:
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/creativetimofficial/paper-dashboard-laravel
-          git fetch --all upstream
+          git fetch upstream --all
           git checkout upstream/master
           git pull upstream/master
           git checkout origin master
@@ -36,7 +36,7 @@ jobs:
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
-          git fetch --all upstream
+          git fetch upstream --all
           git checkout upstream/master
           git pull upstream/master
           git checkout origin master
