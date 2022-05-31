@@ -23,7 +23,7 @@ jobs:
           git fetch --all
           git checkout upstream/master
           git pull upstream master
-          git checkout origin master
+          git checkout origin/master
           git merge upstream/master
           git push origin HEAD:master --force
           git push origin --tags
@@ -39,7 +39,7 @@ jobs:
           git fetch --all
           git checkout upstream/master
           git pull upstream/master
-          git checkout origin master
+          git checkout origin/master
           git merge upstream/master
           git push origin HEAD:master --force
           git push origin --tags
