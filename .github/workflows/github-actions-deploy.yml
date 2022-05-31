@@ -15,11 +15,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: laravel-frontend-presets/paper-dashboard
-          token: ${{ secrets.TOKEN_CT }}
+          token: ${{ secrets.CT_TOKEN }}
       - run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
-          git remote add upstream https://${{ secrets.TOKEN_CT }}@github.com/creativetimofficial/paper-dashboard-laravel
+          git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/creativetimofficial/paper-dashboard-laravel
           git fetch --all
           git checkout upstream/master
           git pull upstream/master
@@ -31,11 +31,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: creativetimofficial/paper-dashboard-laravel
-          token: ${{ secrets.TOKEN_CT }}
+          token: ${{ secrets.CT_TOKEN }}
       - run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
-          git remote add upstream https://${{ secrets.TOKEN_CT }}@github.com/laravel-frontend-presets/paper-dashboard
+          git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
           git fetch --all
           git checkout upstream/master
           git pull upstream/master
