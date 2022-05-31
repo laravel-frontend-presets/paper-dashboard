@@ -16,7 +16,7 @@ jobs:
         with:
           repository: laravel-frontend-presets/paper-dashboard
           token: ${{ secrets.CT_TOKEN }}
-        run: |
+      - run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/creativetimofficial/paper-dashboard-laravel
@@ -32,7 +32,7 @@ jobs:
         with:
           repository: creativetimofficial/paper-dashboard-laravel
           token: ${{ secrets.CT_TOKEN }}
-        run: |
+      - run: |
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
