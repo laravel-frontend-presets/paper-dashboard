@@ -21,12 +21,12 @@ jobs:
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/creativetimofficial/paper-dashboard-laravel
           git fetch --all
+          git pull origin master --tags -f
           git checkout upstream/master
           git pull upstream master
           git checkout origin/master
           git merge upstream/master
           git push origin HEAD:master --force
-          git pull --tags -f
           git push --tags
       - name: Checkout Fork
         uses: actions/checkout@v3
