@@ -26,7 +26,8 @@ jobs:
           git checkout origin/master
           git merge upstream/master
           git push origin HEAD:master --force
-          git push origin --tags
+          git pull --tags -f
+          git push --tags
       - name: Checkout Fork
         uses: actions/checkout@v3
         with:
@@ -42,5 +43,6 @@ jobs:
           git checkout origin/master
           git merge upstream/master
           git push origin HEAD:master --force
-          git push origin --tags
+          git pull --tags -f
+          git push --tags
       - run: echo "The fork was updated"   
