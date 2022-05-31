@@ -32,7 +32,11 @@ jobs:
           git config --global user.name "CI Bot"
           git config --global user.email "team@mupdivision.com"
           git remote add upstream https://${{ secrets.CT_TOKEN }}@github.com/laravel-frontend-presets/paper-dashboard
-          git fetch upstream
+          git fetch --all upstream
+          git checkout upstream/master
+          git pull upstream/master
+          git checkout origin master
           git merge upstream/master
           git push origin HEAD:master --force
+          git push origin --tags
       - run: echo "The fork was updated"   
